@@ -1,0 +1,1 @@
+type CurrencyCode = { currency: string; rate: number; }
