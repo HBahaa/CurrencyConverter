@@ -21,7 +21,7 @@ export function CurrencyConverter() {
   const handleAmountChange = (value: string) => {
     setError('');
     const isNumber = (/^[0-9]*$/).test(value);
-    if (!isNumber) {
+    if (!isNumber || value == '0') {
       setError('Please enter a valid number');
     }
     setAmount(value);
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   output: {
-    fontWeight: 600,
+    fontWeight: 500,
     fontSize: 18,
     textAlign: 'center'
   },
