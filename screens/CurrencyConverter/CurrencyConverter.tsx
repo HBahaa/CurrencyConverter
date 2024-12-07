@@ -4,7 +4,7 @@ import { Button, Platform, StyleSheet, Text, TextInput, View } from 'react-nativ
 import { CurrencyDropdown } from '../../components/CurrencyDropdown';
 import { CurrencyExchange } from '../../components/svgs';
 
-export function Converter() {
+export function CurrencyConverter() {
   const [sourceCurrency, setSourceCurrency] = React.useState<CurrencyCode | null>(null);
   const [targetCurrency, setTargetCurrency] = React.useState<CurrencyCode | null>(null);
   const [error, setError] = React.useState<string>('');

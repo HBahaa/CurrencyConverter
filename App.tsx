@@ -2,13 +2,13 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import {SafeAreaView, SafeAreaProvider} from 'react-native-safe-area-context';
 
-import { Converter } from './screens/Converter';
+import { CurrencyConverter } from './screens/CurrencyConverter';
 
 export default function App() {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
-        <Converter />
+        <CurrencyConverter />
       </SafeAreaView>
     </SafeAreaProvider>
   );
